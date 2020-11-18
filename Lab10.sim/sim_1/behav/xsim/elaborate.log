@@ -1,0 +1,26 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 167dc28f8ebd4e2e8745d9937b7b1278 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot codebreaker_serial_top_behav xil_defaultlib.codebreaker_serial_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'run' [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/tx.sv:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.BaudRateTimer
+Compiling module xil_defaultlib.BitCounter(MOD_VALUE=8)
+Compiling module xil_defaultlib.tx
+Compiling module xil_defaultlib.CharDrawer_serial
+Compiling module xil_defaultlib.SevenSegmentControl
+Compiling module xil_defaultlib.TenMSCounter
+Compiling module xil_defaultlib.ModCounter
+Compiling module xil_defaultlib.ModCounter(MOD_VALUE=6)
+Compiling module xil_defaultlib.stopwatch
+Compiling module xil_defaultlib.dual_port_ram(ADDR_WIDTH=8,DATA_...
+Compiling module xil_defaultlib.decrypt_rc4
+Compiling module xil_defaultlib.Codebreaker
+Compiling module xil_defaultlib.codebreaker_serial_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot codebreaker_serial_top_behav

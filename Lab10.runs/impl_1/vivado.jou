@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 17 21:04:35 2020
+# Process ID: 15900
+# Current directory: E:/Documents/SystemVerilog/Lab10/Lab10.runs/impl_1
+# Command line: vivado.exe -log codebreaker_serial_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source codebreaker_serial_top.tcl -notrace
+# Log file: E:/Documents/SystemVerilog/Lab10/Lab10.runs/impl_1/codebreaker_serial_top.vdi
+# Journal file: E:/Documents/SystemVerilog/Lab10/Lab10.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source codebreaker_serial_top.tcl -notrace

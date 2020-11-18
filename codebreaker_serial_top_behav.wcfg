@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="codebreaker_serial_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="codebreaker_serial_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="95998558666fs"></ZoomStartTime>
+      <ZoomEndTime time="95998665467fs"></ZoomEndTime>
+      <Cursor1Time time="95998725000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="199"></NameColumnWidth>
+      <ValueColumnWidth column_width="95"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/codebreaker_serial_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/btnu" type="logic">
+      <obj_property name="ElementShortName">btnu</obj_property>
+      <obj_property name="ObjectShortName">btnu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/btnc" type="logic">
+      <obj_property name="ElementShortName">btnc</obj_property>
+      <obj_property name="ObjectShortName">btnc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/led" type="array">
+      <obj_property name="ElementShortName">led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/anode" type="array">
+      <obj_property name="ElementShortName">anode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">anode[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/segment" type="array">
+      <obj_property name="ElementShortName">segment[7:0]</obj_property>
+      <obj_property name="ObjectShortName">segment[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/tx_out" type="logic">
+      <obj_property name="ElementShortName">tx_out</obj_property>
+      <obj_property name="ObjectShortName">tx_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/clk_100" type="logic">
+      <obj_property name="ElementShortName">clk_100</obj_property>
+      <obj_property name="ObjectShortName">clk_100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/clk_25" type="logic">
+      <obj_property name="ElementShortName">clk_25</obj_property>
+      <obj_property name="ObjectShortName">clk_25</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/seven_seg_data" type="array">
+      <obj_property name="ElementShortName">seven_seg_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">seven_seg_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/stopwatch_run" type="logic">
+      <obj_property name="ElementShortName">stopwatch_run</obj_property>
+      <obj_property name="ObjectShortName">stopwatch_run</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/enable_drawing_plaintext" type="logic">
+      <obj_property name="ElementShortName">enable_drawing_plaintext</obj_property>
+      <obj_property name="ObjectShortName">enable_drawing_plaintext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/done_drawing_plaintext" type="logic">
+      <obj_property name="ElementShortName">done_drawing_plaintext</obj_property>
+      <obj_property name="ObjectShortName">done_drawing_plaintext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/plaintext" type="array">
+      <obj_property name="ElementShortName">plaintext[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plaintext[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/Codebreaker_inst/cs" type="array">
+      <obj_property name="ElementShortName">cs[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cs[1:0]</obj_property>
+   </wvobject>
+</wave_config>

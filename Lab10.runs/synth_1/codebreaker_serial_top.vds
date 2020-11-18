@@ -1,0 +1,319 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 17 21:03:22 2020
+# Process ID: 20920
+# Current directory: E:/Documents/SystemVerilog/Lab10/Lab10.runs/synth_1
+# Command line: vivado.exe -log codebreaker_serial_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source codebreaker_serial_top.tcl
+# Log file: E:/Documents/SystemVerilog/Lab10/Lab10.runs/synth_1/codebreaker_serial_top.vds
+# Journal file: E:/Documents/SystemVerilog/Lab10/Lab10.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source codebreaker_serial_top.tcl -notrace
+Command: synth_design -top codebreaker_serial_top -part xc7a35tlcpg236-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35tl'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35tl'
+INFO: [Device 21-403] Loading part xc7a35tlcpg236-2L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20832
+WARNING: [Synth 8-6901] identifier 'key' is used before its declaration [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/Codebreaker.sv:30]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1100.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'codebreaker_serial_top' [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/codebreaker_serial_top.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'CharDrawer_serial' [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/CharDrawer_serial.sv:1]
+	Parameter MAX_CHARS bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/CharDrawer_serial.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'tx' [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/tx.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'BaudRateTimer' [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/BaudRateTimer.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'BaudRateTimer' (1#1) [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/BaudRateTimer.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'BitCounter' [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/BitCounter.sv:16]
+	Parameter MOD_VALUE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BitCounter' (2#1) [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/BitCounter.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'tx' (3#1) [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/tx.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'CharDrawer_serial' (4#1) [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/CharDrawer_serial.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegmentControl' [E:/Documents/SystemVerilog/Lab8/Lab8.srcs/sources_1/new/SevenSegmentControl.sv:12]
+	Parameter COUNT_BITS bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegmentControl' (5#1) [E:/Documents/SystemVerilog/Lab8/Lab8.srcs/sources_1/new/SevenSegmentControl.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'stopwatch' [E:/Documents/SystemVerilog/Lab7/Lab7.srcs/sources_1/new/stopwatch.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'TenMSCounter' [E:/Documents/SystemVerilog/Lab7/Lab7.srcs/sources_1/new/TenMSCounter.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'TenMSCounter' (6#1) [E:/Documents/SystemVerilog/Lab7/Lab7.srcs/sources_1/new/TenMSCounter.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'ModCounter' [E:/Documents/SystemVerilog/Lab7/Lab7.srcs/sources_1/new/ModCounter.sv:16]
+	Parameter MOD_VALUE bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ModCounter' (7#1) [E:/Documents/SystemVerilog/Lab7/Lab7.srcs/sources_1/new/ModCounter.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'ModCounter__parameterized0' [E:/Documents/SystemVerilog/Lab7/Lab7.srcs/sources_1/new/ModCounter.sv:16]
+	Parameter MOD_VALUE bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ModCounter__parameterized0' (7#1) [E:/Documents/SystemVerilog/Lab7/Lab7.srcs/sources_1/new/ModCounter.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'stopwatch' (8#1) [E:/Documents/SystemVerilog/Lab7/Lab7.srcs/sources_1/new/stopwatch.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'Codebreaker' [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/Codebreaker.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'decrypt_rc4' [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/decrypt_rc4.sv:1]
+	Parameter BYTES_LEN bound to: 16 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/decrypt_rc4.sv:78]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/decrypt_rc4.sv:125]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/decrypt_rc4.sv:179]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_ram' [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/decrypt_rc4.sv:243]
+	Parameter ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram' (9#1) [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/decrypt_rc4.sv:243]
+INFO: [Synth 8-6155] done synthesizing module 'decrypt_rc4' (10#1) [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/decrypt_rc4.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Codebreaker' (11#1) [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/Codebreaker.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'codebreaker_serial_top' (12#1) [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/sources_1/new/codebreaker_serial_top.sv:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1100.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1100.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1100.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1100.844 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Documents/SystemVerilog/Lab10/Lab10.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/codebreaker_serial_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/codebreaker_serial_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1192.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1192.000 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1192.000 ; gain = 91.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tlcpg236-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1192.000 ; gain = 91.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1192.000 ; gain = 91.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'tx'
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'CharDrawer_serial'
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'Codebreaker'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                           000001 |                              000
+                   Start |                           000010 |                              001
+                    Bits |                           000100 |                              010
+                     Par |                           001000 |                              011
+                    Stop |                           010000 |                              100
+                     Ack |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_WAIT |                             0001 |                               00
+            ST_WAIT_SENT |                             0010 |                               01
+                 ST_SENT |                             0100 |                               10
+                 ST_DONE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'CharDrawer_serial'
+INFO: [Synth 8-3971] The signal "dual_port_ram:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                              000
+                      s1 |                              001 |                              001
+                      s4 |                              010 |                              100
+                      s2 |                              011 |                              010
+                      s3 |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'Codebreaker'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1192.000 ; gain = 91.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 6     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 4     
+	   9 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 1     
+	   7 Input    8 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 3     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 7     
+	  10 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	 256 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 19    
+	   6 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 2     
+	   9 Input    1 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "codebreaker_serial_top/Codebreaker_inst/decript0/ram_inst/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1192.000 ; gain = 91.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1192.000 ; gain = 91.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1201.375 ; gain = 100.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1203.824 ; gain = 102.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1208.516 ; gain = 107.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1208.516 ; gain = 107.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1208.516 ; gain = 107.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1208.516 ; gain = 107.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1208.516 ; gain = 107.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1208.516 ; gain = 107.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    22|
+|3     |LUT1   |    41|
+|4     |LUT2   |    18|
+|5     |LUT3   |    12|
+|6     |LUT4   |    38|
+|7     |LUT5   |    23|
+|8     |LUT6   |    36|
+|9     |FDRE   |   128|
+|10    |FDSE   |     6|
+|11    |IBUF   |     3|
+|12    |OBUF   |    29|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1208.516 ; gain = 107.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1208.516 ; gain = 16.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1208.516 ; gain = 107.672
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1220.563 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1223.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1223.547 ; gain = 122.703
+INFO: [Common 17-1381] The checkpoint 'E:/Documents/SystemVerilog/Lab10/Lab10.runs/synth_1/codebreaker_serial_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file codebreaker_serial_top_utilization_synth.rpt -pb codebreaker_serial_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 21:04:27 2020...
