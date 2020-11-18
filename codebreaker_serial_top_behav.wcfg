@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="95998558666fs"></ZoomStartTime>
-      <ZoomEndTime time="95998665467fs"></ZoomEndTime>
-      <Cursor1Time time="95998725000fs"></Cursor1Time>
+      <ZoomStartTime time="3181475fs"></ZoomStartTime>
+      <ZoomEndTime time="15893181476fs"></ZoomEndTime>
+      <Cursor1Time time="3173181475fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="199"></NameColumnWidth>
-      <ValueColumnWidth column_width="95"></ValueColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/codebreaker_serial_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -48,14 +48,6 @@
       <obj_property name="ElementShortName">tx_out</obj_property>
       <obj_property name="ObjectShortName">tx_out</obj_property>
    </wvobject>
-   <wvobject fp_name="/codebreaker_serial_top/clk_100" type="logic">
-      <obj_property name="ElementShortName">clk_100</obj_property>
-      <obj_property name="ObjectShortName">clk_100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/codebreaker_serial_top/clk_25" type="logic">
-      <obj_property name="ElementShortName">clk_25</obj_property>
-      <obj_property name="ObjectShortName">clk_25</obj_property>
-   </wvobject>
    <wvobject fp_name="/codebreaker_serial_top/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
@@ -79,9 +71,33 @@
    <wvobject fp_name="/codebreaker_serial_top/plaintext" type="array">
       <obj_property name="ElementShortName">plaintext[127:0]</obj_property>
       <obj_property name="ObjectShortName">plaintext[127:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider181">
+      <obj_property name="label">decoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
    </wvobject>
    <wvobject fp_name="/codebreaker_serial_top/Codebreaker_inst/cs" type="array">
-      <obj_property name="ElementShortName">cs[1:0]</obj_property>
-      <obj_property name="ObjectShortName">cs[1:0]</obj_property>
+      <obj_property name="ElementShortName">cs[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cs[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/Codebreaker_inst/plaintext_to_draw" type="array">
+      <obj_property name="ElementShortName">plaintext_to_draw[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plaintext_to_draw[127:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/Codebreaker_inst/correct" type="array">
+      <obj_property name="ElementShortName">correct[127:0]</obj_property>
+      <obj_property name="ObjectShortName">correct[127:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider18">
+      <obj_property name="label">tx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/codebreaker_serial_top/CharDrawer_inst/TX/Din" type="array">
+      <obj_property name="ElementShortName">Din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Din[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
    </wvobject>
 </wave_config>

@@ -1,4 +1,4 @@
-Running: xsim.dir/codebreaker_serial_top_behav/xsimk.exe -simmode gui -wdb codebreaker_serial_top_behav.wdb -simrunnum 0 -socket 25544
+Running: xsim.dir/codebreaker_serial_top_behav/xsimk.exe -simmode gui -wdb codebreaker_serial_top_behav.wdb -simrunnum 0 -socket 2486
 Design successfully loaded
-Design Loading Memory Usage: 5416 KB (Peak: 5416 KB)
-Design Loading CPU Usage: 46 ms
+Design Loading Memory Usage: 5388 KB (Peak: 5388 KB)
+Design Loading CPU Usage: 62 ms
