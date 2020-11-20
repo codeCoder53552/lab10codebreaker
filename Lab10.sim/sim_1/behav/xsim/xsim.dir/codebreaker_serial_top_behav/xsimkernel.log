@@ -2,3 +2,6 @@ Running: xsim.dir/codebreaker_serial_top_behav/xsimk.exe -simmode gui -wdb codeb
 Design successfully loaded
 Design Loading Memory Usage: 5388 KB (Peak: 5388 KB)
 Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 6116 KB (Peak: 6116 KB)
+Simulation CPU Usage: 171 ms
