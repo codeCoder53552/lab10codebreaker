@@ -9,7 +9,6 @@ module decrypt_rc4 #(
     output logic        [(BYTES_LEN * 8) - 1:0]             bytes_out,  // byte stream out
     output logic                                            done        // Active-high done 
 );
-
     // This module implements the following RC4 encryption/decrpytion algorithm: 
 
     // for i from 0 to 255                                  (LOOP1)

@@ -40,8 +40,11 @@ module tx(
         clrBit = 0;
         incBit = 0;
         Sent = 0;
-        if (Reset)
+        if (Reset) begin
             ns = Idle;
+            clrBit = 1;
+            clrTimer = 1;
+        end
         else
             case(cs)
                 Idle: begin
