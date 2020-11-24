@@ -76,21 +76,6 @@ module Codebreaker(
                 end
                 Done:
                     ns = Done;
-//                s3:
-//                    if(start)
-//                        ns = s4;
-//                    else
-//                        ns = s3;
-//                s4: begin
-//                    plaintext_to_draw = 128'h204543454e203232302049532046554e;
-//                    draw_plaintext = 1;
-//                    if(done_drawing_plaintext)
-//                        ns = s0;
-//                    else
-//                        ns = s4;
-//                end
-//                default:
-///                    ns = ERR;
             endcase
         end
     end
