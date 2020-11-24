@@ -9,6 +9,7 @@ module decrypt_rc4 #(
     output logic        [(BYTES_LEN * 8) - 1:0]             bytes_out,  // byte stream out
     output logic                                            done        // Active-high done 
 );
+
     // This module implements the following RC4 encryption/decrpytion algorithm: 
 
     // for i from 0 to 255                                  (LOOP1)
@@ -35,6 +36,14 @@ module decrypt_rc4 #(
                     S_DONE} StateType;
     StateType cs;
 
+    // Lookup table for % 3 calculation.
+    logic[1:0] modmem[256] = '{0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2,
+                               0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2,
+                               0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2,
+                               0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 
+                               0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 
+                               0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0};
+   
 
     logic   [7:0]   i;                          // i Variable register
     logic   [7:0]   j;                          // j Variable registers
@@ -163,7 +172,10 @@ module decrypt_rc4 #(
     end
 
     assign i_calc_loop3 = i + 1;
-    assign j_calc = j + ram_data_out_a + key[(i % 3) * 8 +: 8];
+    // The original % 3 calculation worked in 2019.1 but not in 2020.1
+    // Replace with a lookup table
+    //assign j_calc = j + ram_data_out_a + key[(i % 3) * 8 +: 8];
+    assign j_calc = j + ram_data_out_a + key[modmem[i] * 8 +: 8];
     assign j_calc_loop3 = (j + ram_data_out_a);
     assign K_lookup = Si_saved + Sj_saved;
 
@@ -268,9 +280,10 @@ always_ff @(posedge clk_a) begin
 end
 
 always @(posedge clk_b) begin 
-    if (en_a)
+    if (en_b) begin
         if (we_b)
             ram[addr_b] <= data_in_b;
         data_out_b <= ram[addr_b];
     end
+end
 endmodule
